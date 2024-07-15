@@ -1,4 +1,4 @@
-package ku.cs.controllers;
+package ku.cs.animejavafx;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -13,14 +13,14 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws IOException {
         FXRouter.bind(this, stage, "Hello World");
         configRoute();
-        FXRouter.goTo("hello");
+        FXRouter.goTo("self-intro");
     }
 
     public static void configRoute()
     {
         String viewPath = "ku/cs/views/";
         FXRouter.when("hello", viewPath + "hello-view.fxml");
-        FXRouter.when("student-profile", viewPath + "student.fxml");
+        FXRouter.when("self-intro", viewPath + "self-intro.fxml");
         FXRouter.when("student-list", viewPath + "student-list.fxml");
     }
 

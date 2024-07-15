@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="nextPageBtn" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.SelfIntroController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.SelfIntroController">
    <children>
       <ImageView fx:id="studentImg" fitHeight="189.0" fitWidth="256.0" layoutX="206.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -44,7 +44,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Button defaultButton="true" layoutX="246.0" layoutY="356.0" mnemonicParsing="false" text="ไปกันต่อครับ">
+      <Button fx:id="nextPageButton" defaultButton="true" layoutX="246.0" layoutY="356.0" mnemonicParsing="false" onAction="#onNextPageButton" text="ไปกันต่อครับ">
          <font>
             <Font size="16.0" />
          </font>
