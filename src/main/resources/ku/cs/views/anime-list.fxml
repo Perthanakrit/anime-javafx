@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.AnimeListController">
+   <children>
+      <ListView fx:id="animeListView" layoutX="30.0" layoutY="78.0" prefHeight="250.0" prefWidth="220.0" />
+      <Label layoutX="275.0" layoutY="28.0" text="Anime">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="270.0" layoutY="78.0" prefHeight="270.0" prefWidth="300.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="270.0" stroke="#ebebeb" strokeType="INSIDE" width="300.0" />
+            <Label fx:id="animeNameLable" alignment="TOP_LEFT" layoutX="10.0" layoutY="14.0" style="-fx-font-weight: bold;" text="AnimeName">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="49.0" style="-fx-font-weight: 700;" text="Type">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="animeTypeLabel" layoutX="20.0" layoutY="75.0" text="type...">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="126.0" layoutY="49.0" style="-fx-font-weight: 700;" text="Genre">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="animeGenreLabel" layoutX="126.0" layoutY="75.0" text="genre...">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="105.0" style="-fx-font-weight: 700;" text="Started">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="animeStartedLabel" layoutX="21.0" layoutY="132.0" text="started...">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="124.0" layoutY="105.0" style="-fx-font-weight: 700;" text="Finished">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="animeFinishedLabel" layoutX="125.0" layoutY="132.0" text="finished...">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="168.0" style="-fx-font-weight: 700;" text="Detaills">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="animeDetailLabel" layoutX="22.0" layoutY="192.0" text="details...">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding>
+      </AnchorPane>
+   </children>
+</AnchorPane>

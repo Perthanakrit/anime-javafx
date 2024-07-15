@@ -1,5 +1,7 @@
 package ku.cs.models;
 
+import java.util.UUID;
+
 public class Anime {
     private String id;
     private String title;
@@ -9,8 +11,8 @@ public class Anime {
     private String started;
     private String finished;
 
-    public Anime(String id, String title, String desc, String type, String genre, String started, String finished) {
-        this.id = id;
+    public Anime(String title, String desc, String type, String genre, String started, String finished) {
+        this.id = getRandomString();
         this.title = title;
         this.desc = desc;
         this.type = type;
@@ -47,14 +49,25 @@ public class Anime {
         return finished;
     }
 
+    public String getTitleType ()
+    {
+        return title + " " + type;
+    }
+
     @Override
     public String toString() {
-        return  "id: '" + id + '\'' +
+        return  "{ " + " id: '" + id +  '\'' +
                 ", title: '" + title + '\'' +
-                ", detail: " + desc
-                + ", type: '" + type + '\'' +
+                ", type: '" + type + '\'' +
                 ", genre: '" + genre + '\'' +
                 ", started: '" + started + '\'' +
-                ", finished: '" + finished + '\'';
+                ", finished: '" + finished + '\'' +
+                ", genre: '" + genre + '\''
+                + " }";
+    }
+
+    private String getRandomString()
+    {
+        return UUID.randomUUID().toString().substring(0, 8);
     }
 }

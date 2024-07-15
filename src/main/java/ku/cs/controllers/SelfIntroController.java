@@ -23,10 +23,10 @@ public class SelfIntroController {
     }
 
     @FXML
-    protected void onNextPageButton()
+    public void onNextPageButton()
     {
         try {
-            FXRouter.goTo("student-list");
+            FXRouter.goTo("anime-list");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

@@ -21,7 +21,7 @@ public class HelloApplication extends Application {
         String viewPath = "ku/cs/views/";
         FXRouter.when("hello", viewPath + "hello-view.fxml");
         FXRouter.when("self-intro", viewPath + "self-intro.fxml");
-        FXRouter.when("student-list", viewPath + "student-list.fxml");
+        FXRouter.when("anime-list", viewPath + "anime-list.fxml");
     }
 
     public static void main(String[] args) {
