@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
@@ -17,7 +20,7 @@
       </Label>
       <AnchorPane layoutX="270.0" layoutY="78.0" prefHeight="270.0" prefWidth="300.0">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="270.0" stroke="#ebebeb" strokeType="INSIDE" width="300.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="300.0" stroke="#ebebeb" strokeType="INSIDE" width="300.0" />
             <Label fx:id="animeNameLable" alignment="TOP_LEFT" layoutX="10.0" layoutY="14.0" style="-fx-font-weight: bold;" text="AnimeName">
                <font>
                   <Font size="20.0" />
@@ -68,15 +71,16 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label fx:id="animeDetailLabel" layoutX="22.0" layoutY="192.0" text="details...">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Label>
+            <TextArea fx:id="animeDetailLabel" editable="false" layoutX="22.0" layoutY="188.0" prefHeight="100.0" prefWidth="270.0" text="Naruto Uzumaki, a young ninja &#10;with a sealed demon fox spirit, &#10;seeks recognition and dreams &#10;of becoming the Hokage, &#10;the village leader. &#10;Along with his friends and fellow &#10;ninjas, he faces various enemies&#10; and personal challenges,&#10; growing stronger and wiser throughout his journey." wrapText="true" />
          </children>
          <padding>
             <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
          </padding>
       </AnchorPane>
+      <Button fx:id="backToButton" layoutX="30.0" layoutY="361.0" mnemonicParsing="false" onAction="#onBackToButton" style="-fx-background-color: DFDFDF;" text="กลับไปก่อน">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
    </children>
 </AnchorPane>

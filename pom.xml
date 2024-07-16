@@ -60,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>ku.cs.animejavafx/ku.cs.animejavafx.HelloApplication</mainClass>
+                            <mainClass>ku.cs.animejavafx/ku.cs.animejavafx.MainApplication</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>

@@ -5,10 +5,14 @@ import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.control.TextArea;
+import javafx.scene.text.Text;
 import ku.cs.models.Anime;
 import ku.cs.models.AnimeList;
-import ku.cs.models.Student;
 import ku.cs.services.AnimeDataSource;
+import ku.cs.services.FXRouter;
+
+import java.io.IOException;
 
 public class AnimeListController {
     @FXML
@@ -18,7 +22,7 @@ public class AnimeListController {
     @FXML private Label animeGenreLabel;
     @FXML private Label animeStartedLabel;
     @FXML private Label animeFinishedLabel;
-    @FXML private Label animeDetailLabel;
+    @FXML private TextArea animeDetailLabel;
 
     private AnimeList animeList;
     private Anime selectedAnime;
@@ -41,6 +45,16 @@ public class AnimeListController {
                 }
             }
         });
+    }
+
+    @FXML
+    public void onBackToButton()
+    {
+        try {
+            FXRouter.goTo("self-intro");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private void showList(AnimeList animeList) {
